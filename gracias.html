@@ -105,9 +105,8 @@
 
             try {
                 // API publica de Wompi — no requiere llave privada
-                // Sandbox: sandbox.wompi.co/v1 | Produccion: production.wompi.co/v1
-                // Cambiar a 'production' cuando se active la cuenta real
-                const wompiBase = 'https://sandbox.wompi.co/v1';
+                // Produccion activa desde 2026-04-20. Si vuelves a sandbox, usa sandbox.wompi.co/v1.
+                const wompiBase = 'https://production.wompi.co/v1';
                 const res = await fetch(`${wompiBase}/transactions/${txId}`);
                 const data = await res.json();
                 const tx = data.data || {};
