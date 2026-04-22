@@ -50,32 +50,6 @@
 
 
 
-        /* === FUENTES MÁS GRANDES (2026-04-21) === */
-
-        /* Escala cada nivel Tailwind un paso hacia arriba para mejor legibilidad */
-
-        .text-xs   { font-size: 0.875rem  !important; line-height: 1.25rem !important; }   /* 12→14 */
-
-        .text-sm   { font-size: 1rem      !important; line-height: 1.5rem  !important; }   /* 14→16 */
-
-        .text-base { font-size: 1.125rem  !important; line-height: 1.75rem !important; }   /* 16→18 */
-
-        .text-lg   { font-size: 1.25rem   !important; line-height: 1.75rem !important; }   /* 18→20 */
-
-        .text-xl   { font-size: 1.375rem  !important; line-height: 2rem    !important; }   /* 20→22 */
-
-        .text-2xl  { font-size: 1.625rem  !important; line-height: 2.25rem !important; }   /* 24→26 */
-
-        .text-3xl  { font-size: 2rem      !important; line-height: 2.5rem  !important; }   /* 30→32 */
-
-        .text-4xl  { font-size: 2.5rem    !important; line-height: 1.1     !important; }   /* 36→40 */
-
-        .text-5xl  { font-size: 3.25rem   !important; line-height: 1       !important; }   /* 48→52 */
-
-        body       { font-size: 1.0625rem; }
-
-
-
         /* Ocultar scrollbar pero permitir scroll */
 
         .hide-scroll::-webkit-scrollbar { display: none; }
@@ -466,7 +440,7 @@
 
                 <!-- Contenedor con scroll horizontal suave -->
 
-                <div class="flex justify-start md:justify-center gap-2 overflow-x-auto px-4 pb-2 hide-scroll w-full snap-x" id="category-tabs">
+                <div class="grid grid-cols-3 md:flex md:justify-center gap-2 px-3 md:px-4 pb-2 w-full" id="category-tabs">
 
                     <!-- Tabs generados por JS -->
 
@@ -577,7 +551,7 @@
 
                 </h2>
 
-                <div id="products-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div id="products-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5">
 
                     <!-- Productos generados por JS -->
 
@@ -873,7 +847,7 @@
 
                 <p class="text-xs text-gray-500">Rionegro, Antioquia</p>
 
-                <p class="text-xs text-gray-600 mt-2 italic">Última actualización: 21 de abril de 2026, 7:22 p.m.
+                <p class="text-xs text-gray-600 mt-2 italic">Última actualización: 21 de abril de 2026, 9:05 p.m.
 
             </div>
 
@@ -1998,17 +1972,17 @@
 
                 <button onclick="setCategory('${cat}')" 
 
-                    class="flex items-center gap-1.5 px-4 py-2 rounded-full font-bold text-sm md:text-base whitespace-nowrap transition-all flex-shrink-0 snap-center
+                    class="flex items-center justify-center gap-1 md:gap-1.5 px-2 md:px-4 py-2 rounded-full font-bold text-xs md:text-base whitespace-nowrap transition-all
 
                     ${activeCategory === cat ? 'bg-orange-600 text-white shadow-lg ring-2 ring-orange-300 transform scale-105' : 'bg-white text-gray-600 border border-gray-200 hover:bg-orange-100'}">
 
-                    <span class="text-lg md:text-xl">${getCategoryIcon(cat)}</span>
+                    <span class="text-base md:text-xl">${getCategoryIcon(cat)}</span>
 
                     ${cat}
 
                 </button>
 
-            `).join('') + '<div class="w-2 md:hidden flex-shrink-0"></div>'; 
+            `).join('');
 
         }
 
@@ -2070,13 +2044,13 @@
 
                 return `
 
-                <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 border border-orange-100 flex flex-col h-full group">
+                <div class="bg-white rounded-xl md:rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 border border-orange-100 flex flex-col h-full group">
 
-                    <div class="h-48 bg-orange-200 relative flex items-center justify-center overflow-hidden">
+                    <div class="h-32 sm:h-40 md:h-48 bg-orange-200 relative flex items-center justify-center overflow-hidden">
 
                         ${imageContent}
 
-                        <div class="absolute bottom-3 right-3 bg-white px-3 py-1 rounded-full font-bold text-orange-800 shadow-sm text-sm">
+                        <div class="absolute bottom-2 right-2 md:bottom-3 md:right-3 bg-white px-2 py-0.5 md:px-3 md:py-1 rounded-full font-bold text-orange-800 shadow-sm text-xs md:text-sm">
 
                             ${formatPrice(product.price)}
 
@@ -2084,17 +2058,17 @@
 
                     </div>
 
-                    <div class="p-5 flex-grow flex flex-col justify-between">
+                    <div class="p-3 md:p-5 flex-grow flex flex-col justify-between">
 
                         <div>
 
-                            <h3 class="font-bold text-xl text-gray-800 mb-2">${product.name}</h3>
+                            <h3 class="font-bold text-sm md:text-xl text-gray-800 mb-1 md:mb-2 leading-tight">${product.name}</h3>
 
-                            <p class="text-gray-600 text-sm mb-4">${product.desc}</p>
+                            <p class="text-gray-600 text-xs md:text-sm mb-2 md:mb-4 leading-snug">${product.desc}</p>
 
                         </div>
 
-                        <button onclick="addToCart(${product.id})" class="w-full bg-orange-100 text-orange-700 font-bold py-2 rounded-xl hover:bg-orange-600 hover:text-white transition-colors flex items-center justify-center gap-2 mt-2 active:scale-95 transform">
+                        <button onclick="addToCart(${product.id})" class="w-full bg-orange-100 text-orange-700 font-bold text-xs md:text-sm py-1.5 md:py-2 rounded-lg md:rounded-xl hover:bg-orange-600 hover:text-white transition-colors flex items-center justify-center gap-1 md:gap-2 mt-1 md:mt-2 active:scale-95 transform">
 
                             <i class="ph-bold ph-plus"></i> Agregar
 
