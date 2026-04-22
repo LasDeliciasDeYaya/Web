@@ -847,7 +847,7 @@
 
                 <p class="text-xs text-gray-500">Rionegro, Antioquia</p>
 
-                <p class="text-xs text-gray-600 mt-2 italic">Última actualización: 21 de abril de 2026, 9:05 p.m.
+                <p class="text-xs text-gray-600 mt-2 italic">Última actualización: 21 de abril de 2026, 9:25 p.m.
 
             </div>
 
@@ -1070,7 +1070,9 @@
 
         // --- DATOS ---
 
-        const productsData = [
+        // productsData y categories son let para permitir reemplazo en loadDataFromBackend().
+        // Si la conexion al backend falla, esto queda como fallback offline.
+        let productsData = [
 
             // FRITOS
 
@@ -1900,7 +1902,7 @@
 
         let searchQuery = '';
 
-        const categories = ['Fritos', 'Panaderia', 'Postres'];
+        let categories = ['Fritos', 'Panaderia', 'Postres'];
 
         // Normaliza texto: minúsculas y sin acentos para comparar búsquedas
         function normalizeText(s) {
@@ -2643,7 +2645,68 @@
 
         // --- INICIALIZACIÓN ---
 
-        document.addEventListener('DOMContentLoaded', () => {
+        // Carga datos en vivo desde el portal Ingeproductos (categorías, productos,
+        // precios, descripciones e imágenes). Si falla la red, usa el snapshot en
+        // GitHub Pages. Si ese tampoco responde, quedan los hardcoded como backup.
+        async function loadDataFromBackend() {
+
+            const API_URL = 'https://ingeproductos.app/api/v1/yaya/web/productos';
+
+            const FALLBACK_JSON = 'https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/data/productos.json';
+
+            const ORDER = ['Fritos', 'Panaderia', 'Postres', 'Pedidos especiales'];
+
+            let data = null;
+
+            try {
+
+                const r = await fetch(API_URL, { cache: 'no-cache' });
+
+                if (r.ok) data = await r.json();
+
+            } catch (_) { /* ignorar, probar fallback */ }
+
+            if (!Array.isArray(data) || data.length === 0) {
+
+                try {
+
+                    const r2 = await fetch(FALLBACK_JSON, { cache: 'no-cache' });
+
+                    if (r2.ok) {
+
+                        const j = await r2.json();
+
+                        data = Array.isArray(j.products) ? j.products : null;
+
+                    }
+
+                } catch (_) { /* ignorar, usar hardcoded */ }
+
+            }
+
+            if (Array.isArray(data) && data.length > 0) {
+
+                productsData = data;
+
+                const unicas = Array.from(new Set(data.map(p => p.category)));
+
+                categories = ORDER.filter(c => unicas.includes(c))
+
+                    .concat(unicas.filter(c => !ORDER.includes(c)));
+
+                if (!categories.includes(activeCategory) && categories.length > 0) {
+
+                    activeCategory = categories[0];
+
+                }
+
+            }
+
+        }
+
+        document.addEventListener('DOMContentLoaded', async () => {
+
+            await loadDataFromBackend();  // ← carga dinámica antes del primer render
 
             renderCategoryTabs();
 
