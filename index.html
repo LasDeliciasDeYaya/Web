@@ -847,7 +847,7 @@
 
                 <p class="text-xs text-gray-500">Rionegro, Antioquia</p>
 
-                <p class="text-xs text-gray-600 mt-2 italic">Última actualización: 21 de abril de 2026, 9:25 p.m.
+                <p class="text-xs text-gray-600 mt-2 italic">Última actualización: 22 de abril de 2026, 3:00 a.m.
 
             </div>
 
@@ -1972,15 +1972,15 @@
 
             container.innerHTML = categories.map(cat => `
 
-                <button onclick="setCategory('${cat}')" 
+                <button onclick="setCategory('${cat}')"
 
-                    class="flex items-center justify-center gap-1 md:gap-1.5 px-2 md:px-4 py-2 rounded-full font-bold text-xs md:text-base whitespace-nowrap transition-all
+                    class="flex flex-col md:flex-row items-center justify-center gap-0.5 md:gap-1.5 px-1.5 md:px-4 py-1.5 md:py-2 rounded-2xl md:rounded-full font-bold text-[10px] leading-tight md:text-base md:whitespace-nowrap text-center break-words transition-all min-h-[48px] md:min-h-0
 
                     ${activeCategory === cat ? 'bg-orange-600 text-white shadow-lg ring-2 ring-orange-300 transform scale-105' : 'bg-white text-gray-600 border border-gray-200 hover:bg-orange-100'}">
 
-                    <span class="text-base md:text-xl">${getCategoryIcon(cat)}</span>
+                    <span class="text-base md:text-xl leading-none">${getCategoryIcon(cat)}</span>
 
-                    ${cat}
+                    <span class="block">${cat}</span>
 
                 </button>
 
@@ -2070,7 +2070,7 @@
 
                         </div>
 
-                        <button onclick="addToCart(${product.id})" class="w-full bg-orange-100 text-orange-700 font-bold text-xs md:text-sm py-1.5 md:py-2 rounded-lg md:rounded-xl hover:bg-orange-600 hover:text-white transition-colors flex items-center justify-center gap-1 md:gap-2 mt-1 md:mt-2 active:scale-95 transform">
+                        <button data-pid="${String(product.id).replace(/"/g,'&quot;')}" onclick="addToCart(this.dataset.pid)" class="w-full bg-orange-100 text-orange-700 font-bold text-xs md:text-sm py-1.5 md:py-2 rounded-lg md:rounded-xl hover:bg-orange-600 hover:text-white transition-colors flex items-center justify-center gap-1 md:gap-2 mt-1 md:mt-2 active:scale-95 transform">
 
                             <i class="ph-bold ph-plus"></i> Agregar
 
@@ -2170,15 +2170,15 @@
 
                             <div class="flex items-center bg-white rounded-lg border border-gray-200 shadow-sm">
 
-                                <button onclick="updateQuantity(${item.id}, -1)" class="px-2 py-1 hover:bg-gray-100 text-gray-600 rounded-l-lg"><i class="ph-bold ph-minus"></i></button>
+                                <button data-pid="${String(item.id).replace(/"/g,'&quot;')}" onclick="updateQuantity(this.dataset.pid, -1)" class="px-2 py-1 hover:bg-gray-100 text-gray-600 rounded-l-lg"><i class="ph-bold ph-minus"></i></button>
 
                                 <span class="w-8 text-center font-bold text-sm select-none">${item.quantity}</span>
 
-                                <button onclick="updateQuantity(${item.id}, 1)" class="px-2 py-1 hover:bg-gray-100 text-gray-600 rounded-r-lg"><i class="ph-bold ph-plus"></i></button>
+                                <button data-pid="${String(item.id).replace(/"/g,'&quot;')}" onclick="updateQuantity(this.dataset.pid, 1)" class="px-2 py-1 hover:bg-gray-100 text-gray-600 rounded-r-lg"><i class="ph-bold ph-plus"></i></button>
 
                             </div>
 
-                            <button onclick="removeFromCart(${item.id})" class="text-red-400 hover:text-red-600 p-1"><i class="ph-bold ph-trash text-lg"></i></button>
+                            <button data-pid="${String(item.id).replace(/"/g,'&quot;')}" onclick="removeFromCart(this.dataset.pid)" class="text-red-400 hover:text-red-600 p-1"><i class="ph-bold ph-trash text-lg"></i></button>
 
                         </div>
 
@@ -2281,11 +2281,15 @@
 
         function addToCart(id) {
 
-            const product = productsData.find(p => p.id === id);
+            const key = String(id);
 
-            const existing = cart.find(item => item.id === id);
+            const product = productsData.find(p => String(p.id) === key);
 
-            
+            if (!product) { console.warn('Producto no encontrado:', id); return; }
+
+            const existing = cart.find(item => String(item.id) === key);
+
+
 
             if (existing) {
 
@@ -2305,7 +2309,9 @@
 
         function removeFromCart(id) {
 
-            cart = cart.filter(item => item.id !== id);
+            const key = String(id);
+
+            cart = cart.filter(item => String(item.id) !== key);
 
             renderCart();
 
@@ -2315,7 +2321,9 @@
 
         function updateQuantity(id, delta) {
 
-            const item = cart.find(i => i.id === id);
+            const key = String(id);
+
+            const item = cart.find(i => String(i.id) === key);
 
             if (item) {
 
