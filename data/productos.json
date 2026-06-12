@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-10T08:00:00.115954+00:00",
+  "generated_at": "2026-06-12T08:00:03.779508+00:00",
   "source": "ingeproductos.app backend",
-  "count": 59,
+  "count": 63,
   "products": [
     {
       "id": "2127c60a",
@@ -23,7 +23,7 @@
       "id": "e9d767a2",
       "category": "Fritos",
       "name": "Arepa La Catira",
-      "price": 10000,
+      "price": 12000,
       "desc": "(Arepa asada) Harina de maíz, rellena de pollo desmechado y queso costeño.",
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/e9d767a2.jpg"
     },
@@ -31,7 +31,7 @@
       "id": "f25f5d36",
       "category": "Fritos",
       "name": "Arepa La Peluda",
-      "price": 12000,
+      "price": 14000,
       "desc": "(Arepa asada) Harina de maíz, rellena de carne desmechada y queso costeño.",
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/f25f5d36.jpg"
     },
@@ -47,7 +47,7 @@
       "id": "e2529fc6",
       "category": "Fritos",
       "name": "Empanadas de carne mechada",
-      "price": 4000,
+      "price": 4500,
       "desc": "Harina de maíz, relleno de carne desmechada.",
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/e2529fc6.Imagen.191140.jpg"
     },
@@ -63,7 +63,7 @@
       "id": "8be30493",
       "category": "Fritos",
       "name": "Empanadas de pollo",
-      "price": 3000,
+      "price": 3500,
       "desc": "Harina de maíz, relleno con pollo desmechado.",
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/8be30493.Imagen.190756.jpg"
     },
@@ -204,6 +204,22 @@
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/0a6e7602.jpg"
     },
     {
+      "id": "37836665",
+      "category": "Panaderia",
+      "name": "pan relleno",
+      "price": 18000,
+      "desc": "relleno de tajada, queso costeño y mozarella, jamon y tocineta",
+      "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/37836665.jpg"
+    },
+    {
+      "id": "7be21307",
+      "category": "Panaderia",
+      "name": "pan relleno 2",
+      "price": 18000,
+      "desc": "relleno de jamon de cerdo, queso mozarella, queso costeño y tocineta",
+      "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/7be21307.jpg"
+    },
+    {
       "id": "86a339b0",
       "category": "Panaderia",
       "name": "Pan tipo subway",
@@ -258,6 +274,14 @@
       "price": 13000,
       "desc": "masa de Paneton envuelta con chips de chocolate o frutas confitadas. peso aproximado 300 gramos ",
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/d66ff84f.Imagen.021525.jpg"
+    },
+    {
+      "id": "0c99ab52",
+      "category": "Panaderia",
+      "name": "pizzeta x 3 unds.",
+      "price": 15000,
+      "desc": "pizza con salsa napolitana, queso costeño, queso mizarella, jamon y tocineta",
+      "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/0c99ab52.jpg"
     },
     {
       "id": "e680116e",
@@ -348,20 +372,20 @@
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/324bae21.jpg"
     },
     {
-      "id": "4a222717",
-      "category": "Pedidos especiales",
-      "name": "Arreglo de 4 rosas eternas",
-      "price": 35000,
-      "desc": "4rosas eternacon una mariposa, envuelta en papel coreano ",
-      "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/4a222717.jpg"
-    },
-    {
       "id": "d4fc59e2",
       "category": "Pedidos especiales",
       "name": "Arreglo de 4 rosas eternas",
       "price": 35000,
       "desc": "4 rosas eternas 3fucsia y 1 blanca envueltas en papel coreano blanco",
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/d4fc59e2.jpg"
+    },
+    {
+      "id": "4a222717",
+      "category": "Pedidos especiales",
+      "name": "Arreglo de 4 rosas eternas",
+      "price": 35000,
+      "desc": "4rosas eternacon una mariposa, envuelta en papel coreano ",
+      "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/4a222717.jpg"
     },
     {
       "id": "85fcef9c",
@@ -474,6 +498,14 @@
       "price": 50000,
       "desc": "biscocho, con harina de trigo, azucar, huevo, leche condensada, leche evaporada, crema de leche, quesillo (leche condensada, huevo, azucar, leche liquida, toque de ron y vainilla) decorado con chantilly y cerezas\n",
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/486bd0e9.jpg"
+    },
+    {
+      "id": "83fa3954",
+      "category": "Postres",
+      "name": "torta de piña",
+      "price": 10000,
+      "desc": "tirta cin ridaja de piña",
+      "image": ""
     }
   ]
 }
