@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T08:00:03.779508+00:00",
+  "generated_at": "2026-06-13T08:00:00.120478+00:00",
   "source": "ingeproductos.app backend",
   "count": 63,
   "products": [
@@ -39,7 +39,7 @@
       "id": "483c2d05",
       "category": "Fritos",
       "name": "Arepa Reina pepiada",
-      "price": 10000,
+      "price": 12000,
       "desc": "(Arepa asada) Harina de maíz, rellena de pollo desmechado, una salsa de aguacate triturado, mayonesa, con un toque de limón y cebolla y una porción de aguacate.",
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/483c2d05.jpg"
     },
