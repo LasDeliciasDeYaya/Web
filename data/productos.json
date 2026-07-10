@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-09T08:00:00.086925+00:00",
+  "generated_at": "2026-07-10T08:00:00.112748+00:00",
   "source": "ingeproductos.app backend",
-  "count": 63,
+  "count": 66,
   "products": [
     {
       "id": "2127c60a",
@@ -372,20 +372,20 @@
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/324bae21.jpg"
     },
     {
-      "id": "d4fc59e2",
-      "category": "Pedidos especiales",
-      "name": "Arreglo de 4 rosas eternas",
-      "price": 35000,
-      "desc": "4 rosas eternas 3fucsia y 1 blanca envueltas en papel coreano blanco",
-      "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/d4fc59e2.jpg"
-    },
-    {
       "id": "4a222717",
       "category": "Pedidos especiales",
       "name": "Arreglo de 4 rosas eternas",
       "price": 35000,
       "desc": "4rosas eternacon una mariposa, envuelta en papel coreano ",
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/4a222717.jpg"
+    },
+    {
+      "id": "d4fc59e2",
+      "category": "Pedidos especiales",
+      "name": "Arreglo de 4 rosas eternas",
+      "price": 35000,
+      "desc": "4 rosas eternas 3fucsia y 1 blanca envueltas en papel coreano blanco",
+      "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/d4fc59e2.jpg"
     },
     {
       "id": "85fcef9c",
@@ -458,6 +458,30 @@
       "price": 9000,
       "desc": "Mini donas x 6",
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/43a7e0fd.Imagen.174807.jpg"
+    },
+    {
+      "id": "f7c893d5",
+      "category": "Postres",
+      "name": "Pan relleno con jamón tocineta tajada queso costeño y queso mozzarella",
+      "price": 14000,
+      "desc": "",
+      "image": ""
+    },
+    {
+      "id": "234bb912",
+      "category": "Postres",
+      "name": "Postre 3 leche con chantilly y frutas pequeño",
+      "price": 5000,
+      "desc": "",
+      "image": ""
+    },
+    {
+      "id": "0fd1b21a",
+      "category": "Postres",
+      "name": "Postre 3 leche con frutas y Chantilly grande ",
+      "price": 80000,
+      "desc": "",
+      "image": ""
     },
     {
       "id": "99ae5356",
