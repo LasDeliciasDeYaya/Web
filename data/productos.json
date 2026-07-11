@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T08:00:00.112748+00:00",
+  "generated_at": "2026-07-11T08:00:00.410636+00:00",
   "source": "ingeproductos.app backend",
   "count": 66,
   "products": [
@@ -479,7 +479,7 @@
       "id": "0fd1b21a",
       "category": "Postres",
       "name": "Postre 3 leche con frutas y Chantilly grande ",
-      "price": 80000,
+      "price": 8000,
       "desc": "",
       "image": ""
     },
