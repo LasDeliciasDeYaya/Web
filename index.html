@@ -499,14 +499,15 @@
                             <span class="text-[10px] font-bold text-gray-600">Bancolombia</span>
                         </div>
 
-                        <div class="flex flex-col items-center gap-1 group cursor-default">
+                        <!-- Tarjeta y PSE solo aplican con la pasarela en linea activa (ver PASARELA_ACTIVA) -->
+                        <div class="pasarela-only flex flex-col items-center gap-1 group cursor-default">
                             <div class="bg-white p-1.5 rounded-full shadow-sm group-hover:scale-110 transition-transform">
                                 <i class="ph-fill ph-credit-card text-xl text-blue-600"></i>
                             </div>
                             <span class="text-[10px] font-bold text-gray-600">Tarjeta</span>
                         </div>
 
-                        <div class="flex flex-col items-center gap-1 group cursor-default">
+                        <div class="pasarela-only flex flex-col items-center gap-1 group cursor-default">
                             <div class="bg-white p-1.5 rounded-full shadow-sm group-hover:scale-110 transition-transform">
                                 <i class="ph-fill ph-buildings text-xl text-indigo-600"></i>
                             </div>
@@ -515,7 +516,7 @@
 
                     </div>
 
-                    <p class="text-[10px] text-purple-600 mt-2 font-medium">
+                    <p class="pasarela-only text-[10px] text-purple-600 mt-2 font-medium">
                         <i class="ph-fill ph-shield-check"></i> Pago en línea seguro con Wompi (Bancolombia)
                     </p>
 
@@ -847,7 +848,7 @@
 
                 <p class="text-xs text-gray-500">Rionegro, Antioquia</p>
 
-                <p class="text-xs text-gray-600 mt-2 italic">Última actualización: 22 de abril de 2026, 3:00 a.m.
+                <p class="text-xs text-gray-600 mt-2 italic">Última actualización: 13 de agosto de 2026, 7:40 a.m.
 
             </div>
 
@@ -977,7 +978,7 @@
                 <div class="mb-2">
                     <p class="text-center text-gray-500 text-sm font-bold mb-3 uppercase tracking-wide">¿Cómo quieres ordenar?</p>
 
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div id="order-options-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
 
                         <!-- Opcion 1: WhatsApp -->
                         <button onclick="sendOrder()" id="btn-whatsapp-order"
@@ -990,9 +991,9 @@
                             <span class="text-xs font-normal text-gray-400">Coordinas pago y envío por chat</span>
                         </button>
 
-                        <!-- Opcion 2: Pago en linea -->
+                        <!-- Opcion 2: Pago en linea (se oculta cuando PASARELA_ACTIVA = false) -->
                         <button onclick="sendOrder(true)" id="btn-online-pay"
-                            class="bg-gray-200 text-gray-400 cursor-not-allowed py-4 px-4 rounded-2xl font-bold text-base flex flex-col items-center justify-center gap-2 shadow-lg transition-all border-2 border-transparent hover:border-orange-400 disabled:hover:border-transparent"
+                            class="pasarela-only bg-gray-200 text-gray-400 cursor-not-allowed py-4 px-4 rounded-2xl font-bold text-base flex flex-col items-center justify-center gap-2 shadow-lg transition-all border-2 border-transparent hover:border-orange-400 disabled:hover:border-transparent"
                             disabled>
                             <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-1">
                                 <i class="ph-fill ph-credit-card text-orange-600 text-2xl"></i>
@@ -2458,6 +2459,20 @@
         // Para produccion real: solo cambiar los secrets del Worker (WOMPI_PUB, WOMPI_INTEGRITY).
         const CHECKOUT_WORKER_URL = 'https://yaya-checkout.yaya-delicias.workers.dev';
 
+        // ══════════ INTERRUPTOR PASARELA DE PAGO ══════════
+        // false = pasarela DESACTIVADA: se oculta el boton "Pagar en linea ahora",
+        // los iconos Tarjeta/PSE y la leyenda Wompi. Todo el codigo queda intacto.
+        // Para REACTIVAR el pago en linea: cambiar a true y volver a publicar.
+        const PASARELA_ACTIVA = false;
+
+        if (!PASARELA_ACTIVA) {
+            // Ocultar todos los elementos exclusivos de la pasarela
+            document.querySelectorAll('.pasarela-only').forEach(el => el.classList.add('hidden'));
+            // El boton de WhatsApp pasa a ocupar todo el ancho del carrito
+            const orderGrid = document.getElementById('order-options-grid');
+            if (orderGrid) orderGrid.classList.remove('sm:grid-cols-2');
+        }
+
         async function sendOrder(useCheckout = false) {
 
             if (cart.length === 0) return;
@@ -2513,6 +2528,7 @@
             cart.forEach(item => { total += item.price * item.quantity; });
 
             // --- Pago en linea via Wompi ---
+            if (useCheckout && !PASARELA_ACTIVA) return; // pasarela desactivada: ignorar
             if (useCheckout) {
                 const payBtn = document.getElementById('btn-online-pay');
                 if (payBtn) {
