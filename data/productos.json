@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-16T08:00:00.046723+00:00",
+  "generated_at": "2026-08-17T08:00:00.163623+00:00",
   "source": "ingeproductos.app backend",
-  "count": 66,
+  "count": 67,
   "products": [
     {
       "id": "2127c60a",
@@ -18,6 +18,14 @@
       "price": 13000,
       "desc": "(Arepa frita) Harina de maíz, pollo desmechado, lechuga, tomate, cebolla, aguacate, huevo, queso costeño, mayonesa, salsa de tomate, mostaza y  salsa tártara aparte.",
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/890d1f05.Imagen.011234.jpg"
+    },
+    {
+      "id": "64a85076",
+      "category": "Fritos",
+      "name": "Arepa de huevo mixta ",
+      "price": 7000,
+      "desc": "Arepa frita rellena con un huevo, carne mechada y pollo mechado ",
+      "image": ""
     },
     {
       "id": "e9d767a2",
