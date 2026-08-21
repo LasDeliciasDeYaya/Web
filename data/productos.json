@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-20T08:00:00.070458+00:00",
+  "generated_at": "2026-08-21T08:00:00.220323+00:00",
   "source": "ingeproductos.app backend",
-  "count": 67,
+  "count": 66,
   "products": [
     {
       "id": "2127c60a",
@@ -202,14 +202,6 @@
       "price": 7000,
       "desc": "Masa de harina de trigo, envuelta con finas hiervas y relleno de queso crema y queso peso aproximado 130 gr.",
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/b981dff5.jpg"
-    },
-    {
-      "id": "0a6e7602",
-      "category": "Panaderia",
-      "name": "Pan integral de (avena, salvado de trigo y ajonjoli)",
-      "price": 6000,
-      "desc": "masa de harina de trigo, envuelta con salvado de trigo, avena en hojuela, y ajonjoli peso aproximado 280 gr.",
-      "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/0a6e7602.jpg"
     },
     {
       "id": "37836665",
