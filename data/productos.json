@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-21T08:00:00.220323+00:00",
+  "generated_at": "2026-08-22T08:00:05.054835+00:00",
   "source": "ingeproductos.app backend",
-  "count": 66,
+  "count": 68,
   "products": [
     {
       "id": "2127c60a",
@@ -25,7 +25,7 @@
       "name": "Arepa de huevo mixta ",
       "price": 7000,
       "desc": "Arepa frita rellena con un huevo, carne mechada y pollo mechado ",
-      "image": ""
+      "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/64a85076.jpg"
     },
     {
       "id": "e9d767a2",
@@ -55,7 +55,7 @@
       "id": "e2529fc6",
       "category": "Fritos",
       "name": "Empanadas de carne mechada",
-      "price": 4500,
+      "price": 4000,
       "desc": "Harina de maíz, relleno de carne desmechada.",
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/e2529fc6.Imagen.191140.jpg"
     },
@@ -71,7 +71,7 @@
       "id": "8be30493",
       "category": "Fritos",
       "name": "Empanadas de pollo",
-      "price": 3500,
+      "price": 3000,
       "desc": "Harina de maíz, relleno con pollo desmechado.",
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/8be30493.Imagen.190756.jpg"
     },
@@ -436,6 +436,14 @@
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/1e26b598.Imagen.194924.jpg"
     },
     {
+      "id": "e0805205",
+      "category": "Postres",
+      "name": "Mini torta de chocolate, fresa y Chantilly ",
+      "price": 8000,
+      "desc": "Torta chocolate rellena. On Chantilly y mermelada de fresa ",
+      "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/e0805205.jpg"
+    },
+    {
       "id": "df51a306",
       "category": "Postres",
       "name": "Minidonas por unidad empacadas (Minimo 30)",
@@ -465,7 +473,7 @@
       "name": "Pan relleno con jamón tocineta tajada queso costeño y queso mozzarella",
       "price": 14000,
       "desc": "",
-      "image": ""
+      "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/f7c893d5.jpg"
     },
     {
       "id": "234bb912",
@@ -482,6 +490,14 @@
       "price": 8000,
       "desc": "",
       "image": ""
+    },
+    {
+      "id": "0623a38c",
+      "category": "Postres",
+      "name": "Postre cuchareable Chantilly fresa",
+      "price": 10000,
+      "desc": "Postre con Chantilly, bizcocho, durazno, fresa kiwi y un toque de chocolate",
+      "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/0623a38c.jpg"
     },
     {
       "id": "99ae5356",
