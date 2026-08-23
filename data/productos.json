@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-22T08:00:05.054835+00:00",
+  "generated_at": "2026-08-23T08:00:02.001509+00:00",
   "source": "ingeproductos.app backend",
-  "count": 68,
+  "count": 69,
   "products": [
     {
       "id": "2127c60a",
@@ -442,6 +442,14 @@
       "price": 8000,
       "desc": "Torta chocolate rellena. On Chantilly y mermelada de fresa ",
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/e0805205.jpg"
+    },
+    {
+      "id": "74161341",
+      "category": "Postres",
+      "name": "Mini torta durazno y Chantilly ",
+      "price": 10000,
+      "desc": "",
+      "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/74161341.jpg"
     },
     {
       "id": "df51a306",
