@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T08:00:00.088222+00:00",
+  "generated_at": "2026-09-08T08:00:02.482686+00:00",
   "source": "ingeproductos.app backend",
   "count": 69,
   "products": [
@@ -55,7 +55,7 @@
       "id": "e2529fc6",
       "category": "Fritos",
       "name": "Empanadas de carne mechada",
-      "price": 4000,
+      "price": 4500,
       "desc": "Harina de maíz, relleno de carne desmechada.",
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/e2529fc6.Imagen.191140.jpg"
     },
@@ -71,7 +71,7 @@
       "id": "8be30493",
       "category": "Fritos",
       "name": "Empanadas de pollo",
-      "price": 3000,
+      "price": 3500,
       "desc": "Harina de maíz, relleno con pollo desmechado.",
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/8be30493.Imagen.190756.jpg"
     },
@@ -553,7 +553,7 @@
       "name": "torta de piña",
       "price": 10000,
       "desc": "tirta cin ridaja de piña",
-      "image": ""
+      "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/83fa3954.jpg"
     }
   ]
 }
