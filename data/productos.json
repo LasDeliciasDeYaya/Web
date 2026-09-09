@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-08T08:00:02.482686+00:00",
+  "generated_at": "2026-09-09T08:00:03.160455+00:00",
   "source": "ingeproductos.app backend",
-  "count": 69,
+  "count": 66,
   "products": [
     {
       "id": "2127c60a",
@@ -220,6 +220,14 @@
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/7be21307.jpg"
     },
     {
+      "id": "f7c893d5",
+      "category": "Panaderia",
+      "name": "Pan relleno con jamón tocineta tajada queso costeño y queso mozzarella",
+      "price": 14000,
+      "desc": "",
+      "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/f7c893d5.jpg"
+    },
+    {
       "id": "86a339b0",
       "category": "Panaderia",
       "name": "Pan tipo subway",
@@ -372,20 +380,20 @@
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/324bae21.jpg"
     },
     {
-      "id": "4a222717",
-      "category": "Pedidos especiales",
-      "name": "Arreglo de 4 rosas eternas",
-      "price": 35000,
-      "desc": "4rosas eternacon una mariposa, envuelta en papel coreano ",
-      "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/4a222717.jpg"
-    },
-    {
       "id": "d4fc59e2",
       "category": "Pedidos especiales",
       "name": "Arreglo de 4 rosas eternas",
       "price": 35000,
       "desc": "4 rosas eternas 3fucsia y 1 blanca envueltas en papel coreano blanco",
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/d4fc59e2.jpg"
+    },
+    {
+      "id": "4a222717",
+      "category": "Pedidos especiales",
+      "name": "Arreglo de 4 rosas eternas",
+      "price": 35000,
+      "desc": "4rosas eternacon una mariposa, envuelta en papel coreano ",
+      "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/4a222717.jpg"
     },
     {
       "id": "85fcef9c",
@@ -474,38 +482,6 @@
       "price": 9000,
       "desc": "Mini donas x 6",
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/43a7e0fd.Imagen.174807.jpg"
-    },
-    {
-      "id": "f7c893d5",
-      "category": "Postres",
-      "name": "Pan relleno con jamón tocineta tajada queso costeño y queso mozzarella",
-      "price": 14000,
-      "desc": "",
-      "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/f7c893d5.jpg"
-    },
-    {
-      "id": "234bb912",
-      "category": "Postres",
-      "name": "Postre 3 leche con chantilly y frutas pequeño",
-      "price": 5000,
-      "desc": "",
-      "image": ""
-    },
-    {
-      "id": "0fd1b21a",
-      "category": "Postres",
-      "name": "Postre 3 leche con frutas y Chantilly grande ",
-      "price": 8000,
-      "desc": "",
-      "image": ""
-    },
-    {
-      "id": "0623a38c",
-      "category": "Postres",
-      "name": "Postre cuchareable Chantilly fresa",
-      "price": 10000,
-      "desc": "Postre con Chantilly, bizcocho, durazno, fresa kiwi y un toque de chocolate",
-      "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/0623a38c.jpg"
     },
     {
       "id": "99ae5356",
