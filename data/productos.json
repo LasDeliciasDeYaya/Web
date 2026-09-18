@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-17T08:00:00.073832+00:00",
+  "generated_at": "2026-09-18T08:00:02.253430+00:00",
   "source": "ingeproductos.app backend",
-  "count": 66,
+  "count": 67,
   "products": [
     {
       "id": "2127c60a",
@@ -426,6 +426,14 @@
       "price": 45000,
       "desc": "8 rosas eternas, color rojo, con mariposa y base de carton corrugado decorada",
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/3b22d9bd.jpg"
+    },
+    {
+      "id": "374c6600",
+      "category": "Pedidos especiales",
+      "name": "Lasaña",
+      "price": 22000,
+      "desc": "",
+      "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/374c6600.jpg"
     },
     {
       "id": "a1d3d280",
