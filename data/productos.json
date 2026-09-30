@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-29T08:00:00.383936+00:00",
+  "generated_at": "2026-09-30T08:00:01.940951+00:00",
   "source": "ingeproductos.app backend",
-  "count": 67,
+  "count": 68,
   "products": [
     {
       "id": "2127c60a",
@@ -186,6 +186,14 @@
       "price": 40000,
       "desc": "masa de pan, relleno de jamón, tocineta, uvas pasas y aceitunas, aprox. 800 gr.",
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/ad299fd4.Imagen.201626.jpg"
+    },
+    {
+      "id": "105035b3",
+      "category": "Panaderia",
+      "name": "Pan de jamón ",
+      "price": 14000,
+      "desc": "Pan relleno de jamón tocineta aceituna uvas pasas y un toque de panela",
+      "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/105035b3.jpg"
     },
     {
       "id": "1ad7380b",
