@@ -1,8 +1,16 @@
 {
-  "generated_at": "2026-10-02T08:00:00.160282+00:00",
+  "generated_at": "2026-10-03T08:00:02.424866+00:00",
   "source": "ingeproductos.app backend",
-  "count": 68,
+  "count": 71,
   "products": [
+    {
+      "id": "9e1025e9",
+      "category": "Fritos",
+      "name": "Antipasto de atun",
+      "price": 7000,
+      "desc": "Atún verduras varias ",
+      "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/9e1025e9.jpg"
+    },
     {
       "id": "2127c60a",
       "category": "Fritos",
@@ -50,6 +58,14 @@
       "price": 12000,
       "desc": "(Arepa asada) Harina de maíz, rellena de pollo desmechado, una salsa de aguacate triturado, mayonesa, con un toque de limón y cebolla y una porción de aguacate.",
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/483c2d05.jpg"
+    },
+    {
+      "id": "215dc49b",
+      "category": "Fritos",
+      "name": "Club sandwich",
+      "price": 15000,
+      "desc": "",
+      "image": ""
     },
     {
       "id": "e2529fc6",
@@ -388,20 +404,20 @@
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/324bae21.jpg"
     },
     {
-      "id": "d4fc59e2",
-      "category": "Pedidos especiales",
-      "name": "Arreglo de 4 rosas eternas",
-      "price": 35000,
-      "desc": "4 rosas eternas 3fucsia y 1 blanca envueltas en papel coreano blanco",
-      "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/d4fc59e2.jpg"
-    },
-    {
       "id": "4a222717",
       "category": "Pedidos especiales",
       "name": "Arreglo de 4 rosas eternas",
       "price": 35000,
       "desc": "4rosas eternacon una mariposa, envuelta en papel coreano ",
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/4a222717.jpg"
+    },
+    {
+      "id": "d4fc59e2",
+      "category": "Pedidos especiales",
+      "name": "Arreglo de 4 rosas eternas",
+      "price": 35000,
+      "desc": "4 rosas eternas 3fucsia y 1 blanca envueltas en papel coreano blanco",
+      "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/d4fc59e2.jpg"
     },
     {
       "id": "85fcef9c",
@@ -498,6 +514,14 @@
       "price": 9000,
       "desc": "Mini donas x 6",
       "image": "https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/images/yaya/43a7e0fd.Imagen.174807.jpg"
+    },
+    {
+      "id": "33a64af8",
+      "category": "Postres",
+      "name": "postres de oreo y Chantilly",
+      "price": 10000,
+      "desc": "",
+      "image": ""
     },
     {
       "id": "99ae5356",
