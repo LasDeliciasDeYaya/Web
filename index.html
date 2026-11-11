@@ -848,7 +848,7 @@
 
                 <p class="text-xs text-gray-500">Rionegro, Antioquia</p>
 
-                <p class="text-xs text-gray-600 mt-2 italic">Última actualización: 13 de agosto de 2026, 7:40 a.m.
+                <p class="text-xs text-gray-600 mt-2 italic">Última actualización: 11 de noviembre de 2026, 5:30 p.m.
 
             </div>
 
@@ -2669,12 +2669,14 @@
 
         // --- INICIALIZACIÓN ---
 
-        // Carga datos en vivo desde el portal Ingeproductos (categorías, productos,
+        // Carga datos en vivo desde la app de Yaya en Conexión Apps (categorías, productos,
         // precios, descripciones e imágenes). Si falla la red, usa el snapshot en
         // GitHub Pages. Si ese tampoco responde, quedan los hardcoded como backup.
         async function loadDataFromBackend() {
 
-            const API_URL = 'https://ingeproductos.app/api/v1/yaya/web/productos';
+            // Desde oct-2026 la app de Yaya vive en el servidor de Conexión Apps (OVH)
+
+            const API_URL = 'https://app.conexionapps.com/api/v1/yaya/web/productos';
 
             const FALLBACK_JSON = 'https://raw.githubusercontent.com/lasdeliciasdeyaya/Web/main/data/productos.json';
 
